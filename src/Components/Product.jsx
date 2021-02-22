@@ -13,6 +13,7 @@ import '../App.css';
 function Product() {
     return (
         <Container fluid>
+
             {data.products.map((product) => (<Card style={{ width: '18rem' }}>
                 <Link to={'/product/' + product.id}><Card.Img variant="top" src={product.image} alt={product.name} /></Link>
                 <Card.Body>
@@ -29,7 +30,8 @@ function Product() {
                         Add to Cart</Button></Link>
                 </Card.Body>
             </Card>))};
-        </Container>
+
+        </Container >
 
 
     );

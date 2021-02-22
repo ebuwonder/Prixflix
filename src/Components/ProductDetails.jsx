@@ -5,23 +5,23 @@ import data from "../data";
 import Product from '../Components/Product';
 
 
-function ProductDetails(props) {
-    const product = data;
-    console.log(props.match.params.id);
+function ProductDetails() {
+
+
     return (
 
         <Container fluid>
             <Card style={{ width: '26rem' }}>
-                <Card.Img variant="top" src={product.image} alt={product.name} />
+                <Card.Img variant="top" src={data.image} alt={data.name} />
             </Card>
 
             <Card style={{ width: '50rem' }}>
-                <Card.Header>{product.category}</Card.Header>
+                <Card.Header>{data.category}</Card.Header>
                 <Card.Body>
-                    <Card.Title>{product.name}</Card.Title>
-                    <Card.Text>{product.manufacturer}</Card.Text>
-                    <Card.Text>{product.serNum}</Card.Text>
-                    <Card.Text>{product.description}</Card.Text>
+                    <Card.Title>{data.name}</Card.Title>
+                    <Card.Text>{data.manufacturer}</Card.Text>
+                    <Card.Text>{data.serNum}</Card.Text>
+                    <Card.Text>{data.description}</Card.Text>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlSelect1">
                             <Form.Label>CartQuantity</Form.Label>
@@ -34,7 +34,7 @@ function ProductDetails(props) {
                             </Form.Control>
                         </Form.Group>
                     </Form>
-                    <Link to=''><Button variant="info" size="sm" type="submit" >
+                    <Link to='/cart'><Button variant="info" size="sm" type="submit" >
                         Add to Cart</Button></Link>
                 </Card.Body>
             </Card>

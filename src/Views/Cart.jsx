@@ -4,7 +4,10 @@ import { Card, Button } from 'react-bootstrap';
 
 function Cart(props) {
     const { cartItems, onAdd, onRemove } = props;
-
+    const itemsPrice = cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
+    const taxPrice = itemsPrice * 0.10;
+    const shippingPrice = itemsPrice > 100 ? 0 : 15;
+    const totalPrice = itemsPrice + taxPrice + shippingPrice;
     return (
 
 
@@ -27,7 +30,35 @@ function Cart(props) {
                     </div>
                 </div>
             ))}
+            {cartItems.length !== 0 && (
+                <>
+                    <hr></hr>
+                    <div className="row">
+                        <div className="col-2">Items Price</div>
+                        <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-2">Tax Price</div>
+                        <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
+                    </div>
+                    <div className="row">
+                        <div className="col-2">Shipping Price</div>
+                        <div className="col-1 text-right">
+                            ${shippingPrice.toFixed(2)}
+                        </div>
+                    </div>
 
+                    <div className="row">
+                        <div className="col-2">
+                            <strong>Total Price</strong>
+                        </div>
+                        <div className="col-1 text-right">
+                            <strong>${totalPrice.toFixed(2)}</strong>
+                        </div>
+                    </div>
+
+                </>
+            )}
         </Card>
     );
 }

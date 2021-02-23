@@ -11,8 +11,8 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/COD.jpg",
       "description": " The iconic Black Ops series is back with Call of Duty®: Black Ops Cold War - the direct sequel to the original and fan-favorite Call of Duty®: Black Ops. Black Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player Campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet KGB headquarters and more.<br>As elite operatives, you will follow the trail of a shadowy figure named Perseus who is on a mission to destabilize the global balance of power and change the course of history.Descend into the dark center of this global conspiracy alongside iconic characters Woods, Mason and Hudson and a new cast of operatives attempting to stop a plot decades in the making.",
-      "inStock": 10,
-      "filtered": 10
+      "inStock": 10
+
     },
     {
       "id": "2",
@@ -25,7 +25,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/spiderman.jpg",
       "inStock": 0,
-      "filtered": 10
+      "description": "In the latest adventure in the Marvel’s Spider-Man universe, teenager Miles Morales is adjusting to his new home while following in the footsteps of his mentor, Peter Parker, as a new Spider-Man. But when a fierce power struggle threatens to destroy his new home, the aspiring hero realizes that with great power, there must also come great responsibility. To save all of Marvel’s New York, Miles must take up the mantle of Spider-Man and own it. "
     },
     {
       "id": "3",
@@ -38,7 +38,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/borderland3.jpg",
       "inStock": 8,
-      "filtered": 10
+      "description": "Fully optimized for next-gen consoles! Experience the game in gorgeous 4K resolution at 60 fps in single-player and online co-op (Only Available on PlayStation 5 and Xbox Series X). Add more couch co-op mayhem with support for three- and four-player splitscreen for local multiplayer (Only available on PlayStation 5 and Xbox Series X|S). Copies of Borderlands 3 on Xbox One and PlayStation 4 will include a digital upgrade to the next-gen version of the game (within same console family) at no additional cost. For physical discs, this feature is only valid on next-gen console models with disc drives. "
     },
     {
       "id": "4",
@@ -51,7 +51,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/nba2k21.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": " NBA 2K21 is the latest release in the world-renowned, best-selling NBA 2K series. With exciting improvements upon its best-in-class gameplay, competitive and community online features, and deep, varied game modes, NBA 2K21 offers one-of-a-kind immersion into all facets of NBA basketball and culture - where Everything is Game.In NBA 2K21, new, old, and returning ballers alike will find exciting game modes that offer a variety of basketball experiences:"
     },
     {
       "id": "5",
@@ -64,7 +64,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/Cyberpunk2077.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": "Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character's cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you. "
     },
     {
       "id": "6",
@@ -77,7 +77,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/gears5.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": " From one of gaming's most acclaimed sagas, Gears is bigger than ever, with five thrilling modes and the deepest campaign yet. With all-out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera - herself. From one of the most acclaimed game franchises in history, Gears 5 delivers an epic campaign and brutal action across five thrilling modes.Campaign: With all- out war descending, Kait Diaz breaks away to uncover her connection to the enemy and discovers the true danger to Sera - herself.Escape: A new, aggressive, high - stakes co - op mode featuring a three - player suicide squad that must work together to take out enemy hives from within"
     },
     {
       "id": "7",
@@ -90,7 +90,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/fifa21.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": "Feel Next Level in FIFA 21 on PlayStationⓇ5, Xbox Series X, and Xbox Series S with new features that take The World’s Game from visual to visceral. On the pitch and in the stands, next level technology unlocked by the power of the new generation of consoles enables you to play, see, and move next level in ultra-realistic stadiums that immerse you in the most true-to-life matchday experience in EA SPORTS FIFA history. "
     },
     {
       "id": "8",
@@ -103,7 +103,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/smashbros.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": 10
     },
     {
       "id": "9",
@@ -116,7 +116,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/zelda.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": "Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like. "
     },
     {
       "id": "10",
@@ -129,7 +129,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/mariokart.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": "Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K.Rool join Inkling, Ridley, and every fighter in Super Smash Bros.history.Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more!Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle.Whether you play locally or online, savor the faster combat, new attacks, and new defensive options, like a perfect shield.Jam out to 900 different music compositions and go 1-on - 1 with a friend, hold a 4-player free-for-all, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!"
     },
     {
       "id": "11",
@@ -142,7 +142,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/marioodyssey.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": "Join Mario on a massive, globe-trotting 3D adventure and use his incredible new abilities to collect Moons so you can power up your airship, the Odyssey, and rescue Princess Peach from Bowser's wedding plans! This sandbox-style 3D Mario adventure—the first since 1996's beloved Super Mario 64 and 2002's Nintendo GameCube classic Super Mario Sunshine—is packed with secrets and surprises, and with Mario's new moves like cap throw, cap jump, and capture, you'll have fun and exciting gameplay experiences unlike anything you've enjoyed in a Mario game before. Get ready to be whisked away to strange and amazing places far from the Mushroom Kingdom!"
     },
     {
       "id": "12",
@@ -155,7 +155,7 @@ export default {
       "cartQuantity": 1,
       "image": "/assets/hades.jpg",
       "inStock": 10,
-      "filtered": 10
+      "description": 10
     },
   ]
 }

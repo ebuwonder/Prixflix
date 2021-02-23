@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import data from "../data";
 import '../App.css';
-import axios from 'axios';
 
 function Product(props) {
-
+    const { onAdd } = props;
     return (
         <Container fluid>
             {data.products.map((product) => (<Card style={{ width: '18rem' }}>
@@ -22,7 +21,7 @@ function Product(props) {
                 </ListGroup>
                 <Card.Body>
 
-                    <Link to={'/Cart/' + product.id}><Button variant="info" size="sm" type="submit" >
+                    <Link to={'/Cart/' + product.id}><Button onClick={() => onAdd(product)} variant="info" size="sm" type="submit" >
                         Add to Cart</Button></Link>
                 </Card.Body>
             </Card>))};

@@ -1,14 +1,15 @@
 import React from "react";
-import { Container, Button, Card, Form, Alert } from 'react-bootstrap';
-import { useState, useEffect } from 'react';
+import { Container, Button, Card, Form } from 'react-bootstrap';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import data from "../data";
 
 
 function ProductDetails(props) {
+    const { cartItems } = props;
     const [quantity, setQuantity] = useState(1);
     const product = data.products.find((x) => x.id === props.match.params.id);
-    const handleAddToCart = () => {
+    const onAdd = () => {
         props.history.push('/cart/' + props.match.params.id + '?quantity=' + quantity);
     };
     return (
@@ -48,7 +49,7 @@ function ProductDetails(props) {
 
                         </Form.Group>
                     </Form>
-                    {product.inStock > 0 ? <Button variant="info" size="sm" onClick={handleAddToCart} type="submit" >
+                    {product.inStock > 0 ? <Button variant="info" size="sm" onClick={() => onAdd(product)} type="submit" >
                         Add to Cart</Button> : <div>Out of Stock</div>}
 
                 </Card.Body>

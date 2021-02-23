@@ -13,9 +13,9 @@ function NavBar() {
             <Link to='/'><Navbar.Brand>PrixFlix</Navbar.Brand></Link>
             <Nav className="mr-auto">
                 <NavDropdown title="Categories" id="basic-nav-dropdown">
-                    <NavDropdown.Item ><Link to="/playstation5">Playstation 5</Link></NavDropdown.Item>
-                    <NavDropdown.Item ><Link to="/xboxone">XboxOne</Link></NavDropdown.Item>
-                    <NavDropdown.Item ><Link to="/nintendoswitch">Nintendo Switch</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/category/playstation5">Playstation 5</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/category/xboxone">XboxOne</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/category/nintendoswitch">Nintendo Switch</Link></NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link><Link to="/cart"><span class="badge badge-light"><Cart3 />9</span></Link></Nav.Link>
             </Nav>

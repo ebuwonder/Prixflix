@@ -2,13 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import data from "../data";
 import '../App.css';
-
-
-
-
 
 function Product() {
     return (

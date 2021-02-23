@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Card, CardColumns } from 'react-bootstrap';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
-import Product from './Components/Product';
 import Cart from './Components/Cart';
 import XboxOne from './Views/XboxOne';
 import NintendoSwitch from './Views/NintendoSwitch';
 import Playstation5 from './Views/Playstation5';
-import ProductDetails from "./Components/ProductDetails";
+import Product from './Views/Product';
+import ProductDetails from "./Views/ProductDetails";
 
 
 function App() {
@@ -20,12 +20,8 @@ function App() {
         <NavBar />
         <Card.Body>
           <CardColumns>
-            <Route path="/product/:id">
-              <ProductDetails />
-            </Route>
-            <Route exact={true} path="/">
-              <Product />
-            </Route>
+            <Route path="/product/:id" component={ProductDetails} />
+            <Route path="/" exact={true} component={Product} />
             <Route path="/cart">
               <Cart />
             </Route>
@@ -43,9 +39,8 @@ function App() {
         <Footer />
       </Router>
     </div>
+
+
   );
 }
 export default App;
-
-
-

@@ -2,26 +2,24 @@ import React from "react";
 import { Container, Button, Card, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import data from "../data";
-import Product from '../Components/Product';
 
 
-function ProductDetails() {
-
-
+function ProductDetails(props) {
+    const product = data.products.find((x) => x.id === props.match.params.id);
     return (
 
         <Container fluid>
             <Card style={{ width: '26rem' }}>
-                <Card.Img variant="top" src={data.image} alt={data.name} />
+                <Card.Img variant="top" src={product.image} alt={product.name} />
             </Card>
 
             <Card style={{ width: '50rem' }}>
-                <Card.Header>{data.category}</Card.Header>
+                <Card.Header>{product.category}</Card.Header>
                 <Card.Body>
-                    <Card.Title>{data.name}</Card.Title>
-                    <Card.Text>{data.manufacturer}</Card.Text>
-                    <Card.Text>{data.serNum}</Card.Text>
-                    <Card.Text>{data.description}</Card.Text>
+                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Text>{product.manufacturer}</Card.Text>
+                    <Card.Text>{product.serNum}</Card.Text>
+                    <Card.Text>{product.description}</Card.Text>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlSelect1">
                             <Form.Label>CartQuantity</Form.Label>
@@ -41,4 +39,4 @@ function ProductDetails() {
         </Container>
     );
 }
-export default ProductDetails; 
+export default ProductDetails;

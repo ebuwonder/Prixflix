@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import data from "../data";
 import '../App.css';
+import axios from 'axios';
 
-function Product() {
+function Product(props) {
+
     return (
         <Container fluid>
-
             {data.products.map((product) => (<Card style={{ width: '18rem' }}>
                 <Link to={'/product/' + product.id}><Card.Img variant="top" src={product.image} alt={product.name} /></Link>
                 <Card.Body>

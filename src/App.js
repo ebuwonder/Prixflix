@@ -22,7 +22,7 @@ function App() {
           <CardColumns>
             <Route path="/product/:id" component={ProductDetails} />
             <Route path="/" exact={true} component={Product} />
-            <Route path="/cart">
+            <Route path='/cart/:id?'>
               <Cart />
             </Route>
             <Route path="/xboxone">

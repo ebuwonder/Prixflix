@@ -10,9 +10,9 @@ export default {
       "quantity": 10,
       "cartQuantity": 1,
       "image": "/assets/COD.jpg",
-      "description": "",
-      "inCart": false,
-      "filtered": false
+      "description": " The iconic Black Ops series is back with Call of Duty®: Black Ops Cold War - the direct sequel to the original and fan-favorite Call of Duty®: Black Ops. Black Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player Campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet KGB headquarters and more.<br>As elite operatives, you will follow the trail of a shadowy figure named Perseus who is on a mission to destabilize the global balance of power and change the course of history.Descend into the dark center of this global conspiracy alongside iconic characters Woods, Mason and Hudson and a new cast of operatives attempting to stop a plot decades in the making.",
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "2",
@@ -24,8 +24,8 @@ export default {
       "quantity": 15,
       "cartQuantity": 1,
       "image": "/assets/spiderman.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 0,
+      "filtered": 10
     },
     {
       "id": "3",
@@ -37,8 +37,8 @@ export default {
       "quantity": 10,
       "cartQuantity": 1,
       "image": "/assets/borderland3.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 8,
+      "filtered": 10
     },
     {
       "id": "4",
@@ -50,8 +50,8 @@ export default {
       "quantity": 26,
       "cartQuantity": 1,
       "image": "/assets/nba2k21.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "5",
@@ -63,8 +63,8 @@ export default {
       "quantity": 10,
       "cartQuantity": 1,
       "image": "/assets/Cyberpunk2077.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "6",
@@ -76,8 +76,8 @@ export default {
       "quantity": 10,
       "cartQuantity": 1,
       "image": "/assets/gears5.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "7",
@@ -89,8 +89,8 @@ export default {
       "quantity": 18,
       "cartQuantity": 1,
       "image": "/assets/fifa21.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "8",
@@ -102,8 +102,8 @@ export default {
       "quantity": 11,
       "cartQuantity": 1,
       "image": "/assets/smashbros.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "9",
@@ -115,8 +115,8 @@ export default {
       "quantity": 7,
       "cartQuantity": 1,
       "image": "/assets/zelda.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "10",
@@ -128,8 +128,8 @@ export default {
       "quantity": 15,
       "cartQuantity": 1,
       "image": "/assets/mariokart.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "11",
@@ -141,8 +141,8 @@ export default {
       "quantity": 15,
       "cartQuantity": 1,
       "image": "/assets/marioodyssey.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
     {
       "id": "12",
@@ -154,8 +154,8 @@ export default {
       "quantity": 15,
       "cartQuantity": 1,
       "image": "/assets/hades.jpg",
-      "inCart": false,
-      "filtered": false
+      "inStock": 10,
+      "filtered": 10
     },
   ]
 }

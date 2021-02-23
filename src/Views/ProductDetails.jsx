@@ -1,11 +1,16 @@
 import React from "react";
-import { Container, Button, Card, Form } from 'react-bootstrap';
+import { Container, Button, Card, Form, Alert } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import data from "../data";
 
 
 function ProductDetails(props) {
+    const [quantity, setQuantity] = useState(1);
     const product = data.products.find((x) => x.id === props.match.params.id);
+    const handleAddToCart = () => {
+        props.history.push('/cart/' + props.match.params.id + '?quantity=' + quantity);
+    };
     return (
 
         <Container fluid>
@@ -14,26 +19,36 @@ function ProductDetails(props) {
             </Card>
 
             <Card style={{ width: '50rem' }}>
-                <Card.Header>{product.category}</Card.Header>
+                <Link to=''><Card.Header>{product.category}</Card.Header></Link>
                 <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
+                    <Card.Title>${product.price}</Card.Title>
                     <Card.Text>{product.manufacturer}</Card.Text>
                     <Card.Text>{product.serNum}</Card.Text>
                     <Card.Text>{product.description}</Card.Text>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlSelect1">
-                            <Form.Label>CartQuantity</Form.Label>
-                            <Form.Control as="select">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            Quantity:{' '}
+                            <Form.Control as="select"
+                                value={quantity}
+                                onChange={(e) => {
+                                    setQuantity(e.target.value);
+                                }}
+                            >
+                                {[...Array(product.inStock).keys()].map((x) => (
+                                    <option key={x + 1} value={x + 1}>
+                                        {x + 1}
+                                    </option>
+                                ))}
                             </Form.Control>
+
                         </Form.Group>
                     </Form>
-                    <Link to='/cart'><Button variant="info" size="sm" type="submit" >
-                        Add to Cart</Button></Link>
+                    {product.countInStock > 0 && (
+                        <Button variant="info" size="sm" onClick={handleAddToCart} type="submit" >
+                            Add to Cart</Button>)}:
+                            <Alert variant="danger">
+                        Out of Stock!</Alert>
                 </Card.Body>
             </Card>
         </Container>

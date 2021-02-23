@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Cart3 } from 'react-bootstrap-icons';
 
 
 
-function NavBar() {
+function NavBar(props) {
+    const { countCartItems } = props;
     return (
         <Navbar bg="dark" variant="dark">
             <Link to='/'><Navbar.Brand>PrixFlix</Navbar.Brand></Link>
@@ -17,7 +17,13 @@ function NavBar() {
                     <NavDropdown.Item ><Link to="/category/xboxone">XboxOne</Link></NavDropdown.Item>
                     <NavDropdown.Item ><Link to="/category/nintendoswitch">Nintendo Switch</Link></NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link><Link to="/cart"><span class="badge badge-light"><Cart3 />9</span></Link></Nav.Link>
+                <Nav.Link>
+                    <Link to='/cart'><Cart3 /></Link>{' '}
+                    {countCartItems ? (
+                        <button className="badge">{countCartItems}</button>) : ('')}
+                </Nav.Link>{' '}
+
+
             </Nav>
 
 

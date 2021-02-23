@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import { Card, Button } from 'react-bootstrap';
+import '../Cart.css';
 
 function Cart(props) {
     const { cartItems, onAdd, onRemove } = props;
@@ -56,7 +57,12 @@ function Cart(props) {
                             <strong>${totalPrice.toFixed(2)}</strong>
                         </div>
                     </div>
-
+                    <hr />
+                    <Card.Body>
+                        <Button variant="info" size="lg" block onClick={() => alert('Thanks for shopping with us!')}>
+                            Checkout
+              </Button>
+                    </Card.Body>
                 </>
             )}
         </Card>

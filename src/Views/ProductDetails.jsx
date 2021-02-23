@@ -26,6 +26,10 @@ function ProductDetails(props) {
                     <Card.Text>{product.manufacturer}</Card.Text>
                     <Card.Text>{product.serNum}</Card.Text>
                     <Card.Text>{product.description}</Card.Text>
+                    <Card.Text>
+                        Status:{' '}
+                        {product.inStock > 0 ? 'In Stock' : 'Unavailable.'}
+                    </Card.Text>
                     <Form>
                         <Form.Group controlId="exampleForm.ControlSelect1">
                             Quantity:{' '}
@@ -44,11 +48,9 @@ function ProductDetails(props) {
 
                         </Form.Group>
                     </Form>
-                    {product.countInStock > 0 && (
-                        <Button variant="info" size="sm" onClick={handleAddToCart} type="submit" >
-                            Add to Cart</Button>)}:
-                            <Alert variant="danger">
-                        Out of Stock!</Alert>
+                    {product.inStock > 0 ? <Button variant="info" size="sm" onClick={handleAddToCart} type="submit" >
+                        Add to Cart</Button> : <div>Out of Stock</div>}
+
                 </Card.Body>
             </Card>
         </Container>
